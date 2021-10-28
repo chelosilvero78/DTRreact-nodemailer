@@ -144,8 +144,8 @@ router.post('/reset', function (req, res) {
 
         });
         var currentDateTime = new Date();
-        //http://localhost:3000/change-password/Thu%20Oct%2028%202021%2013:32:15%20GMT-0300%20(hora%20de%20verano%20de%20Paraguay)+++marcrack78@hotmail.com
-        //http://localhost:3000/change-password/Thu%20Oct%2028%202021%2014:23:02%20GMT-0300%20(hora%20de%20verano%20de%20Paraguay)+++marcrack78@hotmail.com
+        //http://localhost:3000/change-password/Thu%20Oct%2028%202021%2013:32:15%20GMT-0300%20(hora%20de%20verano%20de%20Paraguay)+++mar**************@hotmail.com
+        //http://localhost:3000/change-password/Thu%20Oct%2028%202021%2014:23:02%20GMT-0300%20(hora%20de%20verano%20de%20Paraguay)+++mar**************78@hotmail.com
         var mailOptions = {
             //from: 'worldgyan@gmail.com',
             from: 'marcesilvero@gmail.com',
