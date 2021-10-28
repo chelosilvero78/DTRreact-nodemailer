@@ -1,0 +1,385 @@
+{
+	"info": {
+		"_postman_id": "37fabed4-5443-45f6-8be9-5b362791c66d",
+		"name": "DTRNODEREACT",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "users",
+			"item": [
+				{
+					"name": "userlist",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjYwMDU5NDgyMWVhZmQwMTQ0YzAwMWJmNyIsIm5hbWUiOiJtYXJjZWxvIiwibGFzdG5hbWUiOiJzaWx2ZXJvIiwiZW1haWwiOiJtYXJjZXNpbHZlcm9AZ21haWwuY29tIiwicm9sZSI6ImFkbWluIiwiY3JlYXRlVG9rZW4iOjE2MjMzNDIwNTIsImV4cCI6MTYyMzM1Mjg1Mn0.KeqlDSFAygxhjWTdL6TOKLGyPuNtijdufSH-5q9NPwA"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9000/api/users/userlist",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"users",
+								"userlist"
+							]
+						},
+						"description": "ver todas las activiades"
+					},
+					"response": []
+				},
+				{
+					"name": "find-rubrodetalleByName",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjYwMDU5NDgyMWVhZmQwMTQ0YzAwMWJmNyIsIm5hbWUiOiJtYXJjZWxvIiwibGFzdG5hbWUiOiJzaWx2ZXJvIiwiZW1haWwiOiJtYXJjZXNpbHZlcm9AZ21haWwuY29tIiwicm9sZSI6ImFkbWluIiwiY3JlYXRlVG9rZW4iOjE2MjMzNDIwNTIsImV4cCI6MTYyMzM1Mjg1Mn0.KeqlDSFAygxhjWTdL6TOKLGyPuNtijdufSH-5q9NPwA"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [],
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3977/api/v1/get-rubrodetalle?search=s&page=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3977",
+							"path": [
+								"api",
+								"v1",
+								"get-rubrodetalle"
+							],
+							"query": [
+								{
+									"key": "search",
+									"value": "s"
+								},
+								{
+									"key": "page",
+									"value": "1"
+								}
+							]
+						},
+						"description": "ver todas las activiades"
+					},
+					"response": []
+				},
+				{
+					"name": "register",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjYwMDU5NDgyMWVhZmQwMTQ0YzAwMWJmNyIsIm5hbWUiOiJtYXJjZWxvIiwibGFzdG5hbWUiOiJzaWx2ZXJvIiwiZW1haWwiOiJtYXJjZXNpbHZlcm9AZ21haWwuY29tIiwicm9sZSI6ImFkbWluIiwiY3JlYXRlVG9rZW4iOjE2MjMzNDIwNTIsImV4cCI6MTYyMzM1Mjg1Mn0.KeqlDSFAygxhjWTdL6TOKLGyPuNtijdufSH-5q9NPwA"
+							},
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"marcelo3\",\r\n    \"email\":\"marcrack78@hotmail.com\",\r\n    \"password\":\"123456\",\r\n    \"password_confirmation\":\"123456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9000/api/users/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"users",
+								"register"
+							]
+						},
+						"description": "ver todas las activiades"
+					},
+					"response": []
+				},
+				{
+					"name": "profile",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MTdhOTU1MTI2NTcwYjBmYzA4NTY5NGUiLCJuYW1lIjoibWFyY2VsbyIsImVtYWlsIjoibWFyY2VzaWx2ZXJvQGdtYWlsLmNvbSIsImlhdCI6MTYzNTQyNTY5MSwiZXhwIjoxNjM2MDMwNDkxfQ.oKdG52sQj0WRq5n3AHn9jEpxHyNmxEbRKm-Ob4dvwOM",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9000/api/users/profile",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"users",
+								"profile"
+							]
+						},
+						"description": "ver todas las activiades"
+					},
+					"response": []
+				},
+				{
+					"name": "reset-user",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjYwMDU5NDgyMWVhZmQwMTQ0YzAwMWJmNyIsIm5hbWUiOiJtYXJjZWxvIiwibGFzdG5hbWUiOiJzaWx2ZXJvIiwiZW1haWwiOiJtYXJjZXNpbHZlcm9AZ21haWwuY29tIiwicm9sZSI6ImFkbWluIiwiY3JlYXRlVG9rZW4iOjE2MjMzNDIwNTIsImV4cCI6MTYyMzM1Mjg1Mn0.KeqlDSFAygxhjWTdL6TOKLGyPuNtijdufSH-5q9NPwA",
+								"disabled": true
+							},
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MTdhOTU1MTI2NTcwYjBmYzA4NTY5NGUiLCJuYW1lIjoibWFyY2VsbyIsImVtYWlsIjoibWFyY2VzaWx2ZXJvQGdtYWlsLmNvbSIsImlhdCI6MTYzNTQyNTY5MSwiZXhwIjoxNjM2MDMwNDkxfQ.oKdG52sQj0WRq5n3AHn9jEpxHyNmxEbRKm-Ob4dvwOM"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"marcrack78@hotmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9000/api/users/reset",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"users",
+								"reset"
+							]
+						},
+						"description": "ver todas las activiades"
+					},
+					"response": []
+				},
+				{
+					"name": "login",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"marcesilvero@gmail.com\",\r\n    \"password\":\"123456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9000/api/users/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"users",
+								"login"
+							]
+						},
+						"description": "ver todas las activiades"
+					},
+					"response": []
+				},
+				{
+					"name": "update-user",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MTdhOTU1MTI2NTcwYjBmYzA4NTY5NGUiLCJuYW1lIjoibWFyY2VsbyIsImVtYWlsIjoibWFyY2VzaWx2ZXJvQGdtYWlsLmNvbSIsImlhdCI6MTYzNTQ0NDAyMywiZXhwIjoxNjM2MDQ4ODIzfQ.lBekArCJiUEQ9JGtMaGkdljeB1J4l2o5zgBc_23iZ50"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"_id\":\"617ab015b593ff1a608975e1\",\r\n    \"name\":\"marcelo3333\",\r\n    \"email\":\"marcrack78@hotmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9000/api/users/update",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"users",
+								"update"
+							]
+						},
+						"description": "ver todas las activiades"
+					},
+					"response": []
+				},
+				{
+					"name": "delete-rubrodetalle",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjYwMDU5NDgyMWVhZmQwMTQ0YzAwMWJmNyIsIm5hbWUiOiJtYXJjZWxvIiwibGFzdG5hbWUiOiJzaWx2ZXJvIiwiZW1haWwiOiJtYXJjZXNpbHZlcm9AZ21haWwuY29tIiwicm9sZSI6ImFkbWluIiwiY3JlYXRlVG9rZW4iOjE2MjMzNDIwNTIsImV4cCI6MTYyMzM1Mjg1Mn0.KeqlDSFAygxhjWTdL6TOKLGyPuNtijdufSH-5q9NPwA"
+							},
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3977/api/v1/delete-rubrodetalle/18",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3977",
+							"path": [
+								"api",
+								"v1",
+								"delete-rubrodetalle",
+								"18"
+							]
+						},
+						"description": "ver todas las activiades"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
